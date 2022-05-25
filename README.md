@@ -15,6 +15,8 @@ python ./captchagen.py -o ./dataset/train -n 600
 python ./captchagen.py -o ./dataset/test -n 100
 ```
 
+> 该工具依赖于其目录下的 `font.ttc` 文件作为验证码字体。
+
 这些数据用来训练去噪网络（自编码器）。
 
 训练结束后，我们需要使用 `./deNoise.py` 来生成下一阶段，训练识别网络的数据集。
